@@ -3,10 +3,8 @@ from gensim.models import Word2Vec
 import os
 from django.conf import settings
 
-# مسار المودل
 MODEL_PATH = os.path.join(settings.BASE_DIR, "product_similarity.model")
 
-# تحميل المودل
 model = Word2Vec.load(MODEL_PATH)
 
 
